@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 //import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 import { FormsModule } from '@angular/forms';
+import { SettingsService } from './services/service.index';
+import { ServiceModule } from './services/service.module';
 //import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 
 @NgModule({
@@ -28,7 +30,7 @@ import { FormsModule } from '@angular/forms';
     PagesModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServiceModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
